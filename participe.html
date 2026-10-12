@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Envie perguntas e opiniões sobre exploração espacial.">
+  <title>Exploração Espacial | Participe</title>
+</head>
+<body>
+  <header>
+    <h1>Participe da Exploração</h1>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="missoes.html">Missões</a></li>
+        <li><a href="descobertas.html">Descobertas</a></li>
+        <li><a href="participe.html">Participe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Envie sua mensagem</h2>
+      <p>Preencha o formulário para compartilhar sua área de interesse. Este formulário é demonstrativo e não envia dados para um servidor.</p>
+
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Seus dados</legend>
+
+          <p>
+            <label for="nome">Nome completo:</label><br>
+            <input type="text" id="nome" name="nome" autocomplete="name" required minlength="3">
+          </p>
+
+          <p>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </p>
+
+          <p>
+            <label for="nascimento">Data de nascimento:</label><br>
+            <input type="date" id="nascimento" name="nascimento">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Seus interesses</legend>
+
+          <p>
+            <label for="tema">Tema favorito:</label><br>
+            <select id="tema" name="tema" required>
+              <option value="">Selecione uma opção</option>
+              <option value="lua">Lua e missões tripuladas</option>
+              <option value="marte">Marte e exploração robótica</option>
+              <option value="telescopios">Telescópios e astronomia</option>
+              <option value="vida">Busca por vida fora da Terra</option>
+            </select>
+          </p>
+
+          <p>Você já observou o céu com um telescópio?</p>
+          <label><input type="radio" name="telescopio" value="sim" required> Sim</label>
+          <label><input type="radio" name="telescopio" value="nao"> Não</label>
+
+          <p>
+            <label for="nivel">Quanto você gosta de astronomia? (1 a 10)</label><br>
+            <input type="number" id="nivel" name="nivel" min="1" max="10" value="5">
+          </p>
+
+          <p>
+            <label for="mensagem">Sua pergunta ou comentário:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="40" required minlength="10" placeholder="Escreva sua mensagem aqui..."></textarea>
+          </p>
+
+          <p>
+            <label><input type="checkbox" name="aceite" required> Confirmo que as informações preenchidas são minhas.</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Enviar formulário</button>
+          <button type="reset">Limpar campos</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Obrigado por visitar nosso site!</p>
+    <p><a href="index.html">Voltar à página inicial</a></p>
+  </footer>
+</body>
+</html>
